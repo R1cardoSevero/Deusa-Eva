@@ -184,6 +184,8 @@ body{
     text-align: center;
     transform: translate(0px,12px);
     font-size: 2rem;
+    -webkit-text-stroke-width: .2px;
+    -webkit-text-stroke-color: #a40ef4;
 }
 
 #mais h1{
@@ -215,6 +217,15 @@ body{
     100%{
         left: 65vw;
         rotate: 15deg;
+    }
+}
+
+@keyframes moving-up-down {
+    0%{
+
+    }
+    100%{
+
     }
 }
 
@@ -310,6 +321,18 @@ footer li:nth-child(2) i{
 
 footer li a{
     text-decoration: none;
+}
+
+footer h5{
+    font-family: monospace;
+    color: rgb(196, 196, 196);
+    width: 100%;
+    font-weight: 200;
+    text-align: center;
+}
+
+footer b{
+    font-size: 1rem;
 }
 
 @keyframes rotatio {
