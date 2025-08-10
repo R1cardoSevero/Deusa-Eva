@@ -23,6 +23,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 10px;
+}
+
+header nav{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+header nav h3{
+    background-color: rgb(100, 21, 148);
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    padding: 6px 10px;
+    width: 110px;
+    text-align: center;
+    margin: 1px;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    transition: all .3s ease-in-out;
+}
+
+header nav h3:hover{
+    transition: all .3s ease-in-out;
+    background-color: rgb(160, 44, 233);
+    transform: translate(0px, 10px);
+}
+
+header nav h3:nth-child(1){
+    border-radius: 10px 0px 0px 10px;
+}
+
+header nav h3:last-child{
+    border-radius: 0px 10px 10px 0px;
 }
 
 body{
