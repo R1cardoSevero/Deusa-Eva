@@ -282,7 +282,10 @@ body{
 #valores ul li h3{
     font-size: 1.3rem;
     font-family: fontSobreTitle2;
-    color: rgba(213, 213, 213, 0.728);
+    color: rgb(213, 213, 213);
+    z-index: 10;
+    background-color: black;
+    padding: 0px 4px;
 }
 
 #valores ul li h4{
@@ -292,6 +295,16 @@ body{
     animation: valoresComing 1s linear both;
     animation-timeline: view(); /* vincula à rolagem */
     animation-range: cover 0% 30%; /* 0% ao 100% da área visível */
+}
+
+#valores ul li h4::after{
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 3px;
+    background-color: #b638e8;
+    top: 50%;
+    right: 110%;
 }
 
 @keyframes valoresComing {
